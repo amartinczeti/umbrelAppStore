@@ -1,0 +1,36 @@
+manifestVersion: 1
+id: antonysumbrelstore-beszel-hub
+name: Beszel
+tagline: Simple, lightweight server monitoring
+icon: https://beszel.dev/icon.svg
+category: Development
+version: "0.9.1"
+port: 8090
+description: >-
+ Beszel is a lightweight server monitoring platform that includes Docker statistics, historical data, and alert functions.
+
+It has a friendly web interface, simple configuration, and is ready to use out of the box. It supports automatic backup, multi-user, OAuth authentication, and API access.
+developer: Beszel.dev
+website: https://beszel.dev/
+submitter: Antony Martin-Czeti
+submission: ""
+repo: https://github.com/henrygd/beszel
+support: https://github.com/henrygd/beszel/issues
+gallery:
+  - https://beszel.dev/image/home-dashboard.png
+  - https://beszel.dev/image/home-alerts.webp
+  - https://beszel.dev/image/home-system.png
+releaseNotes: >-
+ What's Changed
+  - Update install-agent.sh script to support Alpine (OpenRC)
+  - Fix: json.Unmarshal not resetting struct fields
+  - Refactor: simplify startSystemUpdateTicker using time.Tick
+  - Upgrade gopsutil to fix memory leak on ARM Mac
+  - Fixes multiple GPUs with same name merging in temperature graph
+  - Adds armv6l support for agent install script.
+  - Sets Hub's minimum log level to warn by default for new installations.
+  - Adds Slovenian and Danish languages
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
